@@ -1,0 +1,22 @@
+{
+  "name": "css",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nieyulin112/css.git"
+  },
+  "author": "nieyulin <1139723906@qq.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nieyulin112/css/issues"
+  },
+  "homepage": "https://github.com/nieyulin112/css#readme",
+  "dependencies": {
+    "express": "^4.15.2"
+  }
+}
