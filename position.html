@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>position</title>
+	<style type="text/css">
+		ul {
+			list-style: none;
+		}
+		.position {
+			position: center;
+		}
+	</style>
+</head>
+<body>
+	<div class="position">
+		<h2>定位的基本的学习</h2>
+		<ul>
+			<li>static:默认为static</li>
+			<li>relative</li>
+			<li>absolute</li>
+			<li>fixed</li>
+			<li>center(css3)</li>
+			<li>page(css3)</li>
+			<li>sticky</li>
+		</ul>
+		<h3>static</h3>
+		<div class="dis">
+			对象遵循常规流。此时4个定位偏移属性不会被应用。
+		</div>
+		<h3 >relative</h3>
+		<div class="dis">
+			对象遵循常规流，并且参照自身在常规流中的位置通过top，right，bottom，left
+			这4个定位偏移属性进行偏移时不会影响常规流中的任何元素。
+		</div>
+		<h3>absolute</h3>
+		<div class="dis">
+			对象脱离常规流，此时偏移属性参照的是离自身最近的定位祖先元素，
+			如果没有定位的祖先元素，则一直回溯到body元素。
+			盒子的偏移位置不影响常规流中的任何元素，其margin不与其他任何margin折叠。
+		</div>
+		<h3>fixed</h3>
+		<div class="dis">
+			与absolute一致，但偏移定位是以窗口为参考。当出现滚动条时，对象不会随着滚动。
+		</div>
+		<h3>center</h3>
+		<div class="dis">
+			与absolute一致，但偏移定位是以定位祖先元素的中心点为参考。盒子在其包含容器垂直水平居中。（CSS3）
+		</div>
+		<h3>page</h3>
+		<div class="dis">
+			与absolute一致。
+			元素在分页媒体或者区域块内，元素的包含块始终是初始包含块，否则取决于每个absolute模式。（CSS3）
+		</div>
+		<h3>stickly</h3>
+		<div class="dis">
+			对象在常态时遵循常规流。
+			它就像是relative和fixed的合体，当在屏幕中时按常规流排版，当卷动到屏幕外时则表现如fixed。
+			该属性的表现是现实中你见到的吸附效果。（CSS3）
+		</div>
+	</div>
+</body>
+</html>
